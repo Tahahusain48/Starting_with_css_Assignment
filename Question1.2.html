@@ -1,0 +1,27 @@
+<!-- what happens when you target the same element with inline internal and external CSS -->
+
+<!-- we have applied all the properties but we can see the page using live server that the inline property is applied as inline has the highest priority -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External -->
+    <link rel="stylesheet" href="./Styles.css">
+    <style>
+        /* Internal */
+        h4{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Inline -->
+       <h4 style="color: red;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione assumenda enim officiis totam eveniet asperiores pariatur suscipit commodi cumque expedita.
+       </h4>
+    </div>
+</body>
+</html>
